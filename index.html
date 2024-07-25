@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar TailwindCSS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              fontFamily:{
+                'scp':['Source Code Pro']
+              },
+              colors:{
+                'primary':'#3B413C',
+                'secondary' : '#9DB5B2'
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body>
+    <h1 class="text-5xl font-bold bg-gradient-to-r from-blue-500 to-teal-400 bg-clip-text text-transparent text-center mt-5">TailwindCSS</h1>
+    <section class="container bg-gray-400 p-3 flex justify-around flex-wrap mt-5 mx-auto">
+        <div class="bg-yellow-300 w-[200px] my-1">Tumbuhan</div>
+        <div class="bg-yellow-300 w-[200px] my-1">Hewan</div>
+        <div class="bg-yellow-300 w-[200px] my-1">Hewan</div>
+        <div class="bg-yellow-300 w-[200px] my-1">Hewan</div>
+        <div class="bg-yellow-300 w-[200px] my-1">Hewan</div>
+        <div class="bg-yellow-300 w-[200px] my-1">Hewan</div>
+    </section>
+    <section class="mt-4">
+        <div class="bg-secondary max-w-[300px] w-auto  p-2 mx-auto">
+            <h1 class="text-primary font-bold text-3xl text-center">HALO SOBAT</h1>
+        </div>
+    </section>
+    <section class="mt-5 mb-[500px] max-w-[600px] bg-red-300 mx-auto py-2"> 
+        <p class="font-scp text-[15px] text-balance mx-[10%]
+        text-[#431407]">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        <span class="italic font-bold text-primary">Labore debitis enim vero minima totam</span>, earum, nobis quo nemo cupiditate odio dolore quod iste suscipit est ea animi excepturi maiores in.</p>
+    </section>
+</body>
+</html>
